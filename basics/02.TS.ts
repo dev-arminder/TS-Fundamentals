@@ -21,4 +21,24 @@ function hello(name: string){
 
 // Even if don't have type annotations on your parameter, TS still check for right numbes of parameters
 
-// Return Type Annotations
+// Return Type Annotations - after parameter List
+
+// This Function Must have to return number
+function getFavNumber(): number {
+    return 26;
+}
+
+// Anonymous Function
+// When A Function appears in a place where TS can determine how it's going to be called
+// the params of that function are automatically gives types
+// Same with Arrow Function
+
+const names = ["Alice", "Bob"];
+
+names.forEach(function (s){
+    console.log(s.toUppercase());
+})
+
+
+// Objects
+// To define an Object type we simply list it's properties and their types
