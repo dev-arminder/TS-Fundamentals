@@ -58,3 +58,36 @@ function printCode(pt : {x : number, y : number}){
 
 // }
 
+
+
+// Union types - build new types out of existing ones using operators
+
+// Union Type is type formed from two or more other types , representing values
+// that may be of any of those types
+//  use | to form union types
+
+// function printId(id: number | string){
+//     console.log(`Your Id is: ${id}`)
+// }
+// printId(45);
+// printId("45")
+
+
+// TS only allow you to do things with union if that thing is valid for every memeber of the union
+// E.g if you have union of string | number you cann't use , methods that are only on string
+
+// Solution to above problem is narrow the union with Code 
+//  - NARROWING occurs when TS can deduce a more speific type for a value based on the strucutre of code
+
+function printId(id: number | string){
+    // Narrowing based upon type
+    if ( typeof id === "string") console.log(id.toUpperCase());
+    else console.log(id)
+}
+
+function welcomePeople(x: string[] | string){
+    // Narrowing based upon X is array of string or not
+    if(Array.isArray(x)) console.log('There are a lot of people')
+    else console.log('You are alone')
+}
+
