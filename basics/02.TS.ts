@@ -42,3 +42,19 @@ names.forEach(function (s){
 
 // Objects
 // To define an Object type we simply list it's properties and their types
+
+// E.g function that takes point like object 
+
+function printCode(pt : {x : number, y : number}){
+    console.log(`X - Cordinate is ${pt.x}`);
+    console.log(`Y cordinate is ${pt.y}`)
+}
+// type part of each property is optional - default will be any
+// Optional Properties
+
+
+// To Make a property optional add a ? after the property name
+// function print(obj: {first: string, last?: string}){
+
+// }
+
