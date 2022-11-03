@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dev-arminder/starting-with-typescript-exercise/issues"
   },
-  "homepage": "https://github.com/dev-arminder/starting-with-typescript-exercise#readme"
+  "homepage": "https://github.com/dev-arminder/starting-with-typescript-exercise#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
