@@ -23,3 +23,5 @@ function getFullName(obj: {firstName: string; lastName?: string}): string{
 
 getFullName({firstName: "Arminder"});
 getFullName({firstName: "Arminder", lastName: "Singh"})
+
+export {}
