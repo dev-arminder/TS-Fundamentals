@@ -53,3 +53,6 @@ function bakeFruit(fruitName: string) {
 }
 
 const bakedFruit = transformFruit(fruitList, bakeFruit);
+
+
+export {}
